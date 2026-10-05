@@ -27,3 +27,18 @@ main {
   line-height: 1.45;
   color: #b7aa98;
 }
+.contact {
+  margin: 1.1rem 0 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+.contact a {
+  color: #7a9e98;
+  text-decoration: none;
+}
+.contact a:hover,
+.contact a:focus {
+  color: #9fc4bd;
+  text-decoration: underline;
+}
