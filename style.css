@@ -15,6 +15,16 @@ main {
   padding: 8vh 6vw 10vh;
   text-align: center;
 }
+.stack {
+  width: min(920px, 100%);
+}
+/* Text axis follows the logo's tagline/mountains, which sit 3.5% left of the image centre. */
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 7%;
+}
 .logo {
   width: min(920px, 100%);
   height: auto;
