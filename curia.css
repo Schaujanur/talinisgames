@@ -347,17 +347,6 @@ main a:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; b
 .leaf-name { font: 600 0.8125rem/1 var(--f-text); letter-spacing: 0.28em; text-transform: uppercase; color: var(--ink-2); }
 
 
-.concepts {
-  padding: clamp(56px, 7vw, 104px) var(--gutter) clamp(72px, 9vw, 128px);
-  background: linear-gradient(180deg, var(--bg) 0%, #0f1215 100%);
-  border-top: 1px solid var(--rule-soft);
-}
-.concepts-head { max-width: var(--wrap); margin: 0 auto 2.6rem; }
-.plates { max-width: 880px; margin: 0 auto; }
-.cplate { margin: 0; padding: 8px; border: 1px solid var(--rule-soft); background: #0d0e0d; }
-.cplate img { width: 100%; filter: saturate(0.85) sepia(0.08); }
-
-
 .colophon {
   text-align: center;
   padding: clamp(40px, 6vw, 96px) var(--gutter) clamp(64px, 8vw, 104px);
