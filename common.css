@@ -15,7 +15,7 @@
   font: 500 0.875rem/1.2 var(--bar-font); letter-spacing: 0.02em;
 }
 .studio-bar .studio-home { display: inline-flex; align-items: center; min-height: 44px; border-radius: 6px; }
-.studio-bar .studio-home img { display: block; height: 34px; width: auto; }
+.studio-bar .studio-home img { display: block; height: 44px; width: auto; }
 .studio-bar ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 4px; }
 .studio-bar a { color: var(--bar-fg); text-decoration: none; }
 .studio-bar ul a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px; border-radius: 6px; }
@@ -35,5 +35,5 @@
   .studio-bar ul::-webkit-scrollbar { display: none; }
   .studio-bar ul { justify-content: space-between; }
   .studio-bar ul a { padding: 0 6px; white-space: nowrap; font-size: 0.8125rem; letter-spacing: 0; }
-  .studio-bar .studio-home img { height: 28px; }
+  .studio-bar .studio-home img { height: 36px; }
 }
