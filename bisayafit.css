@@ -225,6 +225,19 @@ p { margin: 0; }
 }
 .phone-wrap figcaption { margin-top: 26px; text-align: center; font-size: 0.8125rem; color: var(--muted); }
 
+.phone--shot { aspect-ratio: auto; }
+.phone--shot .phone-screen { height: auto; background: #000; }
+.phone--shot .phone-screen img { display: block; width: 100%; height: auto; }
+.shots {
+  max-width: var(--maxw); margin: clamp(48px, 6vw, 72px) auto clamp(56px, 7vw, 88px);
+  display: flex; justify-content: center; gap: clamp(40px, 7vw, 110px); flex-wrap: wrap;
+}
+.phone-wrap--small .phone { width: 260px; }
+.phone-wrap--small::before { width: 380px; height: 380px; }
+.shots .phone-wrap:nth-child(1) .phone { transform: rotate(-2.5deg); }
+.shots .phone-wrap:nth-child(2) .phone { transform: rotate(2.5deg); }
+.shots figcaption { font-size: 0.9375rem; font-weight: 600; color: var(--cream); }
+
 
 .figures {
   padding: clamp(64px, 8vw, 110px) var(--gutter) clamp(72px, 9vw, 120px);
