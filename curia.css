@@ -319,7 +319,7 @@ main a:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; b
     radial-gradient(60% 40% at 50% 0%, rgba(207, 74, 45, 0.07), transparent 70%),
     var(--bg);
 }
-.seasons-head, .concepts-head { max-width: var(--wrap); margin: 0 auto 2.6rem; }
+.seasons-head { max-width: var(--wrap); margin: 0 auto 2.6rem; }
 .hours { max-width: var(--wrap); margin: 0 auto; }
 .hours-grid {
   list-style: none; margin: 0; padding: 0;
@@ -352,17 +352,10 @@ main a:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; b
   background: linear-gradient(180deg, var(--bg) 0%, #0f1215 100%);
   border-top: 1px solid var(--rule-soft);
 }
-.plates { max-width: var(--wrap); margin: 0 auto; }
-.plates-row { display: flex; gap: clamp(20px, 3vw, 40px); align-items: flex-start; }
-.cplate { position: relative; margin: 0; padding: 8px; border: 1px solid var(--rule-soft); background: #0d0e0d; }
-.cplate-wide { flex: 1.7778 1 0; min-width: 0; }
-.cplate-tall { flex: 1.3333 1 0; min-width: 0; }
+.concepts-head { max-width: var(--wrap); margin: 0 auto 2.6rem; }
+.plates { max-width: 880px; margin: 0 auto; }
+.cplate { margin: 0; padding: 8px; border: 1px solid var(--rule-soft); background: #0d0e0d; }
 .cplate img { width: 100%; filter: saturate(0.85) sepia(0.08); }
-.cplate-no {
-  position: absolute; left: 20px; bottom: 18px;
-  padding: 0.3rem 0.6rem; background: rgba(8, 9, 9, 0.78);
-  font: 600 0.75rem/1 var(--f-text); letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold);
-}
 
 
 .colophon {
@@ -402,8 +395,6 @@ main a:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; b
 @media (max-width: 760px) {
   body { font-size: 1.125rem; }
   .hours-grid { grid-template-columns: 1fr; }
-  .plates-row { flex-direction: column; }
-  .cplate-wide, .cplate-tall { flex: none; width: 100%; }
   .timeline { grid-template-columns: 1fr; gap: 0; border-left: 1px solid var(--rule); margin-left: 6px; }
   .timeline li { position: relative; padding: 0 0 2rem 1.6rem; text-align: left; }
   .timeline li:last-child { padding-bottom: 0.2rem; }
