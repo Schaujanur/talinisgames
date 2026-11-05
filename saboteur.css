@@ -389,6 +389,26 @@ a { color: inherit; }
 .strip:nth-child(2) { margin-left: 18px; }
 
 
+
+.brief {
+  position: relative; padding: clamp(80px, 9vw, 130px) 16px clamp(72px, 8vw, 110px);
+  background: linear-gradient(180deg, var(--ink), var(--night) 50%, var(--ink));
+}
+.brief-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+.brief-title {
+  display: inline-flex; align-items: center; gap: 18px;
+  font: 600 0.8125rem/1.3 var(--sans); letter-spacing: 0.34em; text-transform: uppercase;
+  color: var(--brass);
+}
+.brief-title::before, .brief-title::after {
+  content: ""; width: 40px; height: 5px;
+  border-top: 1px solid currentColor; border-bottom: 1px solid currentColor;
+}
+.brief .double-rule { width: 120px; margin: 26px auto 34px; }
+.brief p { font: 300 1.125rem/1.7 var(--sans); color: var(--silver); text-wrap: pretty; }
+.brief p + p { margin-top: 18px; }
+.brief .brief-lead { font: 400 clamp(1.5rem, 2.6vw, 2rem)/1.3 var(--display); letter-spacing: 0.02em; color: var(--ivory); margin-bottom: 30px; text-wrap: balance; }
+
 .onward {
   position: relative; isolation: isolate; overflow: hidden;
   padding: 96px 16px 0;
