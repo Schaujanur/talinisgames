@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Saboteur Aboard · Talinis Games</title>
+<meta name="description" content="Saboteur Aboard: a detective game set in 1937, for the browser. Find the saboteur before it is too late. In development at Talinis Games.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Saboteur Aboard · Talinis Games">
+<meta property="og:description" content="Detective game · 1937 · Browser. Find the saboteur before it is too late. In development.">
+<meta name="theme-color" content="#05070b">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="saboteur.css">
+<link rel="icon" href="favicon.ico?v=2" sizes="any"><link rel="icon" type="image/png" href="favicon.png?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="deco-corner" viewBox="0 0 96 96">
+    <path d="M1 96V1h95" />
+    <path d="M8 96V24h16V8h72" />
+    <path d="M15 62V31h16V15h31" />
+    <path d="M38 34l4-4 4 4-4 4z" fill="currentColor" />
+  </symbol>
+  <symbol id="chevron" viewBox="0 0 24 12">
+    <path d="M1 1l11 9 11-9" />
+  </symbol>
+</svg>
+
+<header class="studio-bar">
+  <a class="studio-home" href="index.html"><img src="assets/img/talinis-logo_ohne-unterzeile-dark.svg" width="1673" height="588" alt="Talinis Games – home"></a>
+  <nav aria-label="Studio">
+    <ul>
+      <li><a href="curia.html">Curia Crescit</a></li>
+      <li><a href="saboteur.html" aria-current="page">Saboteur Aboard</a></li>
+      <li><a href="bisayafit.html">BisayaFit</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="title">
+    <picture class="hero-art">
+      <source media="(max-width: 700px)" srcset="assets/render/airship-night-mobile.webp" width="900" height="1400">
+      <source media="(min-width: 1500px)" srcset="assets/render/airship-night-2400.webp" width="2400" height="1200">
+      <img src="assets/render/airship-night-1200.webp" srcset="assets/render/airship-night-1200.webp 1200w, assets/render/airship-night-2400.webp 2400w" sizes="100vw" width="1200" height="600" alt="An airship glides above a moonlit sea of clouds at night, a faint row of lit windows along its hull.">
+    </picture>
+    <div class="hero-light" aria-hidden="true"></div>
+    <div class="frame" aria-hidden="true">
+      <svg class="corner tl"><use href="#deco-corner" /></svg>
+      <svg class="corner tr"><use href="#deco-corner" /></svg>
+      <svg class="corner bl"><use href="#deco-corner" /></svg>
+      <svg class="corner br"><use href="#deco-corner" /></svg>
+    </div>
+
+    <div class="hero-copy">
+      <div class="hero-top">
+        <p class="eyebrow"><span>Detective game</span><span class="dot" aria-hidden="true"></span><span>1937</span><span class="dot" aria-hidden="true"></span><span>Browser</span></p>
+        <h1 id="title" class="title">
+          <span class="title-line">Saboteur</span>
+          <span class="title-rule" aria-hidden="true"></span>
+          <span class="title-line title-line--b">Aboard</span>
+        </h1>
+      </div>
+      <div class="hero-bottom">
+        <p class="tagline">Find the saboteur before it is too late.</p>
+        <div class="hero-actions">
+          <p class="status"><span>In development</span></p>
+          <a class="cue" href="#passage">Boarding pass<svg aria-hidden="true" focusable="false"><use href="#chevron" /></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="passage" id="passage" aria-labelledby="pass-title">
+    <div class="drift" aria-hidden="true">
+      <img class="drift-ship" src="assets/render/airship-silhouette.webp" width="2000" height="424" alt="" loading="lazy" decoding="async">
+    </div>
+    <div class="beam" aria-hidden="true"></div>
+
+    <div class="passage-inner">
+      <article class="ticket">
+        <div class="ticket-main">
+          <div class="ticket-head">
+            <h2 id="pass-title" class="ticket-kind">Boarding pass</h2>
+            <p class="ticket-house">Talinis Games</p>
+          </div>
+          <p class="ticket-name">Saboteur Aboard</p>
+          <div class="double-rule" aria-hidden="true"></div>
+          <dl class="fields">
+            <div><dt>Genre</dt><dd>Detective game</dd></div>
+            <div><dt>Year</dt><dd>1937</dd></div>
+            <div><dt>Platform</dt><dd>Browser</dd></div>
+            <div><dt>Status</dt><dd>In development</dd></div>
+          </dl>
+        </div>
+        <div class="ticket-stub" aria-hidden="true">
+          <div class="sun"></div>
+          <p class="stub-year">1937</p>
+          <p class="stub-name">Saboteur Aboard</p>
+        </div>
+      </article>
+
+      <aside class="telegram" aria-labelledby="tele-title">
+        <div class="tele-head">
+          <h3 id="tele-title">Telegram</h3>
+        </div>
+        <p class="tele-body">
+          <span class="strip">FIND THE SABOTEUR</span>
+          <span class="strip">BEFORE IT IS TOO LATE STOP</span>
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="onward" aria-labelledby="onward-title">
+    <div class="sunrise" aria-hidden="true"></div>
+    <div class="onward-inner">
+      <h2 id="onward-title" class="onward-title">More from Talinis Games</h2>
+      <ul class="onward-links">
+        <li><a href="curia.html"><span class="ol-kind">City-building simulation</span><span class="ol-name">Curia Crescit</span></a></li>
+        <li><a href="bisayafit.html"><span class="ol-kind">Language app</span><span class="ol-name">BisayaFit</span></a></li>
+        <li><a href="index.html"><span class="ol-kind">The studio</span><span class="ol-name">Talinis Games</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="studio-foot">
+  <p>© 2026 Talinis Games · <a href="privacy.html">Privacy</a> · <a href="mailto:info@talinisgames.com">info@talinisgames.com</a></p>
+</footer>
+</body>
+</html>

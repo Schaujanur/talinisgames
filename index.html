@@ -1,26 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Talinis Games</title>
-  <meta name="description" content="Talinis Games. The site is up. What gets played here comes next.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico?v=2" sizes="any">
-  <link rel="icon" type="image/png" href="favicon.png?v=2">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Talinis Games – independent games and apps from Negros Oriental</title>
+<meta name="description" content="Talinis Games is a small independent studio in Valencia, Negros Oriental, Philippines, named after Mount Talinis. Games and apps: Curia Crescit, Saboteur Aboard and BisayaFit.">
+<meta property="og:title" content="Talinis Games">
+<meta property="og:description" content="Independent games and apps, made in Valencia, Negros Oriental, Philippines.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#06090f">
+<link rel="icon" href="favicon.ico?v=2" sizes="any"><link rel="icon" type="image/png" href="favicon.png?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="index.css">
+<script src="index.js" defer></script>
 </head>
-<body>
-  <main>
-    <div class="stack">
-      <img class="logo" src="logo.png" alt="Talinis Games, Valencia, Negros Oriental">
-      <div class="text">
-        <p class="lead">The site is up. What gets played here comes next.</p>
-        <p class="contact"><a href="mailto:info@talinisgames.com">info@talinisgames.com</a></p>
+<body class="page-home">
+<header class="studio-bar">
+  <a class="studio-home" href="index.html" aria-current="page"><img src="assets/img/talinis-logo_ohne-unterzeile-dark.svg" width="1673" height="588" alt="Talinis Games – home"></a>
+  <nav aria-label="Studio">
+    <ul>
+      <li><a href="curia.html">Curia Crescit</a></li>
+      <li><a href="saboteur.html">Saboteur Aboard</a></li>
+      <li><a href="bisayafit.html">BisayaFit</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  
+  <section class="cine" aria-labelledby="hero-title">
+    <div class="cine__frame">
+      <picture class="cine__pic">
+        <source media="(max-width: 700px) and (orientation: portrait)" srcset="assets/render/talinis-night-mobile.webp" width="900" height="1400">
+        <img src="assets/render/talinis-night-1200.webp" srcset="assets/render/talinis-night-1200.webp 1200w, assets/render/talinis-night-2400.webp 2400w" sizes="100vw" width="2400" height="1200" alt="Mount Talinis at blue hour: two horn-like volcanic peaks above misty rainforest ridges, coconut palms on the plain and stars overhead." fetchpriority="high">
+      </picture>
+      <div class="cine__fireflies" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <svg class="cine__frond" viewBox="0 0 600 300" preserveAspectRatio="xMinYMax meet" aria-hidden="true" focusable="false">
+        <path d="M-36.7 334.4 L-16.7 319.8 L4 305.9 L25.2 292.8 L47.2 280.5 L69.7 269 L92.9 258.3 L116.8 248.4 L141.3 239.2 L166.4 230.8 L192.1 223.3 L218.5 216.5 L245.6 210.5 L273.3 205.3 L301.6 200.9 L330.6 197.2 L360.2 194.4 L390.4 192.4 L421.3 191.2 L452.8 190.7 L485 191.1 L517.8 192.3 L551.2 194.2 L585.2 197 L619.9 200.5 L620.1 199.5 L585.4 195.5 L551.3 192.3 L517.9 189.9 L485 188.3 L452.8 187.6 L421.2 187.6 L390.2 188.4 L359.8 190 L330.1 192.5 L300.9 195.7 L272.4 199.7 L244.4 204.5 L217.1 210.2 L190.4 216.6 L164.2 223.9 L138.7 231.9 L113.9 240.8 L89.6 250.5 L65.9 260.9 L42.8 272.2 L20.4 284.4 L-1.5 297.3 L-22.7 311 L-43.3 325.6ZM18.9 292Q44.2 296.7 71.5 323.4Q52.6 283.7 21.4 288.2ZM20.8 291.3Q30 280.6 34.6 283.1Q26.2 272.9 19.6 289ZM34.9 283.3Q64.1 288.8 95.2 317Q73.3 273.7 37.6 278.8ZM36.9 282.4Q48 270.5 53.8 272.6Q43.8 261.7 35.6 279.8ZM51.2 274.7Q80.4 281.4 111.7 309.2Q89.8 266.4 54 270.2ZM53.7 273.4Q63 259 64.7 258.1Q55.5 252.7 51.5 271.5ZM67.2 266.4Q98.4 279.7 135.1 328.6Q112.6 265.2 71.4 262.1ZM70.3 265.6Q81.9 250.7 86.4 252.5Q75.6 241.6 68.4 262.9ZM83.8 259.7Q127.1 271.3 175.7 327.8Q143.9 250.3 88.9 253.3ZM87.5 258.4Q105.2 240.2 113.7 239.8Q97.5 227.6 85.2 254.6ZM101.5 251.6Q136 264.9 175.7 313.8Q150.7 248.5 105.9 246.7ZM104.2 250.9Q118.7 237.3 128 242.1Q115.4 225.6 103.2 247.4ZM118.8 245.3Q160.7 263.9 209 318.4Q178.5 243.5 124.1 239.2ZM122.3 244.3Q142.1 228.3 153.5 227.7Q136 214.7 120.5 240.2ZM136.9 238.4Q173.1 259.7 216.2 310.6Q190.2 242.2 142 233.1ZM140 237.7Q156.3 222.8 167 228.4Q152.9 209.8 138.9 233.8ZM154.9 232.6Q196.4 252.5 245.3 315.9Q215.5 233.1 160.7 226.8ZM158.9 231.6Q176.6 213.2 185.2 214.1Q169.1 200.2 156.7 227.7ZM173.3 226.9Q215.2 251.9 266.5 325.7Q236.8 232.8 179.7 221.2ZM177.6 226.1Q196.5 207.1 206.2 208.7Q189.2 193 175.4 221.9ZM192.3 222.5Q242.6 246.9 300.5 310Q264 222.2 198.7 215.1ZM196.8 221.2Q218.9 199.8 230.1 199.6Q210.2 184.1 194.2 216.4ZM211.9 217.1Q255.7 238.3 307 301.5Q275.4 217.6 217.8 210.9ZM215.6 216.3Q234.4 198.3 246.2 204.5Q229.8 183.2 214.2 211.7ZM231 212.9Q277.5 241.6 334.2 318.5Q301.2 220 238.1 206.4ZM235.1 212.2Q257.4 193.7 272.8 201.7Q253.8 176.5 234 207ZM251.1 208.1Q287.4 240.3 335.5 323.3Q310.7 224.3 258.1 203.3ZM254.8 208Q275.2 192.9 290.6 202Q273.6 177.4 254.4 203.3ZM272 204.4Q304.2 232.2 346 296.1Q323.8 217.3 277.9 199.9ZM275.3 204.1Q291 189 302.1 197.5Q288.7 175.6 274.6 200.1ZM292.6 201.5Q328.4 228.5 373.6 294Q348.6 211.9 298.7 196.5ZM295.6 201.2Q316.9 190.6 334.2 198.9Q316.8 176.3 295.6 196.9ZM314.1 199Q349.6 223 391.7 266.8Q366.3 205.1 319.2 193.7ZM317.3 198.2Q335.8 184.6 347.3 185.5Q331.3 171.9 316 194.4ZM335 196.2Q367.3 222.9 409.2 291.1Q387 208.4 340.9 191.9ZM338 196.1Q358.1 186.8 374.7 194.8Q358.3 173.4 338 192.1ZM356.4 194.2Q385.9 227.9 427.4 304.7Q408 214.6 363 190.3ZM360.2 194.3Q379.5 180.4 392.4 183.4Q375.8 166.7 359.1 190.2ZM378.8 192.9Q409.2 219.6 449.3 287.1Q428.5 206.1 384.6 188.8ZM382.3 192.7Q400.1 179.8 411.5 180.9Q396 167.5 381.1 189ZM401.7 191.8Q429 215.2 463.6 259.5Q444.6 201.9 406.4 187.8ZM404 191.5Q420.3 182.8 433.9 190.4Q420.5 171.5 404.1 188.1ZM424.5 191.2Q451.3 212.2 485.1 257Q466.3 199.3 428.9 187.4ZM426.6 190.9Q442.7 183.4 456.3 191.1Q443.3 172.5 426.8 187.7ZM446.9 190.9Q471.6 220.5 506.6 280Q490.3 208.8 452.5 187.4ZM449.6 191Q466.9 181.6 481.6 190.8Q467.6 169.5 449.8 187.3ZM471 190.5Q486.3 211.9 509.3 258.2Q499.6 204.9 475 188.4ZM473 190.7Q484.3 183.7 493.9 190.4Q484.7 175.4 473.1 188.2ZM495 191.4Q512.2 210.3 535.5 242.2Q523.9 201.6 498.4 188.8ZM496.9 191.3Q509.1 185.5 518.2 187Q508 177.6 496.5 188.9ZM519.4 192.2Q532.6 205.6 550 229.1Q541 199.1 522 190.3ZM520.7 192.1Q530.1 188.8 537.6 190.5Q529.9 182.9 520.7 190.4ZM544.1 193.5Q553.5 203.1 565.9 219.4Q559.5 198.4 545.9 192.1ZM545.1 193.4Q551.8 191.1 557.1 192.3Q551.6 186.9 545 192.2ZM569.1 195.2Q574.1 202.1 581.5 213.8Q578.3 199.5 570.3 194.4ZM569.6 195.2Q573.9 193.9 577.6 195.7Q574.2 191.2 569.7 194.4ZM-57.8 312 L-49.5 303.1 L-41 294.7 L-32.2 286.7 L-23.2 279.2 L-13.9 272.2 L-4.4 265.7 L5.4 259.7 L15.4 254.1 L25.7 249 L36.2 244.4 L46.9 240.2 L58 236.6 L69.2 233.4 L80.8 230.7 L92.5 228.5 L104.6 226.7 L116.9 225.5 L129.4 224.7 L142.2 224.4 L155.2 224.6 L168.5 225.3 L182.1 226.5 L195.9 228.2 L209.9 230.3 L210.1 229.7 L196 227.3 L182.2 225.5 L168.6 224.1 L155.3 223.1 L142.2 222.7 L129.3 222.8 L116.7 223.3 L104.3 224.4 L92.1 225.9 L80.2 227.9 L68.5 230.4 L57 233.4 L45.8 236.9 L34.8 240.9 L24 245.4 L13.5 250.4 L3.2 255.8 L-6.9 261.8 L-16.7 268.3 L-26.3 275.2 L-35.6 282.7 L-44.7 290.6 L-53.6 299 L-62.2 308ZM-35.4 286.3Q-26.1 287.7 -16.1 297Q-23.2 282.8 -34.6 284.9ZM-34.3 286.1Q-30.9 276.9 -31.8 280.6Q-35.6 273.9 -35.7 285.2ZM-24.1 277.2Q-13.5 277.5 -2 290.9Q-9.9 272.1 -23 275.5ZM-22.8 277Q-17.4 267.1 -16.7 268.5Q-22.3 262.8 -24.3 275.7ZM-13.5 269.9Q15.2 276.5 47.8 318.7Q26.8 262.9 -10.1 265.8ZM-10.9 269Q-3.3 254.7 -1.6 260.5Q-9 246.6 -12.7 266.6ZM-1.2 261.7Q22.8 270.1 50.9 309.5Q33.5 259.1 2 258.4ZM0.9 261.2Q7.7 249.3 10.3 255.2Q4 241.8 -0.2 258.9ZM11.1 255.3Q42.1 262.6 77.1 306.3Q54.4 247.7 14.7 250.8ZM13.9 254.3Q23.8 239.3 26.7 242.1Q17.2 230.9 11.9 251.8ZM24 248.4Q48.3 262.5 77.6 302.1Q60.3 251.3 27.6 245.1ZM26.1 248.1Q33.7 236 38.2 243.6Q31.5 227.2 25.5 245.4ZM36.7 243.3Q66.3 263.6 102.9 314.4Q82.1 249.8 41.5 239.2ZM39.9 242.8Q51.1 227.4 56.1 232.2Q45.7 217.2 38.3 239.7ZM50.3 238.7Q81.2 262.2 119.6 310.2Q97.8 247.2 55.2 234.2ZM53.3 238.2Q69 225.1 79.3 229.1Q65.7 213.3 52.3 234.7ZM64.2 234.6Q96 255.3 135.5 314.8Q113.1 241 69.4 230.3ZM67 234.3Q82.2 221.5 93.5 229.4Q80.8 209.3 66.6 230.6ZM79.1 230.9Q104.7 248.9 137 297.9Q119 237.3 83.3 227.4ZM81.1 230.7Q92.6 219.9 102.6 230.7Q93.3 209.8 81.3 227.7ZM93.5 228.1Q115.8 252.3 147 315.7Q132.3 242.8 98.5 225.2ZM96.2 228.2Q107.9 216.3 116.6 224.2Q106.7 205.8 95.8 225.1ZM109.2 225.9Q126.2 245.7 150.6 298.6Q139.5 238.6 113.2 223.8ZM111.3 226.1Q121.4 217.4 129.1 223.2Q120.6 209.1 111 223.6ZM124.7 225.2Q145.3 243.5 172.8 294.3Q158.8 234.7 128.7 222.5ZM126.8 225.2Q139.2 217.5 148.8 222.2Q138.5 208.6 126.6 222.5ZM141.1 224.3Q152.4 240.5 169.9 282.1Q162.8 235.7 144.1 222.9ZM142.3 224.5Q151.5 220.6 160.5 229.1Q153.4 214.7 142.9 222.7ZM157.6 224.9Q170 237.8 186.7 264.6Q178.4 232 160.2 223.2ZM158.7 224.9Q166.2 220.3 173.4 227.3Q167.5 214.8 159.1 223.2ZM174.7 225.7Q180.8 234.9 190 250.7Q186.2 231.8 176.4 224.8ZM175.5 225.8Q180.5 223.3 184.7 225.7Q180.7 219.9 175.6 224.8ZM192.3 227.4Q193.5 230.1 195.9 235.6Q195.3 229.4 192.9 227.2ZM192.6 227.6Q193.9 227.2 195 227.3Q193.9 225.2 192.6 227Z"/>
+        <g transform="translate(221 56) scale(1.2) rotate(-6 66 118)">
+          <ellipse cx="70" cy="80" rx="25" ry="33" transform="rotate(-18 70 80)"/>
+          <ellipse cx="44" cy="40" rx="16" ry="15"/>
+          <ellipse cx="31" cy="47" rx="10" ry="7.5"/>
+          <circle cx="56" cy="35" r="5"/>
+          <ellipse cx="80" cy="100" rx="22" ry="18"/>
+          <path class="limb" d="M54 60 Q44 84 44 114" stroke-width="9"/>
+          <ellipse cx="44" cy="116" rx="7" ry="4"/>
+          <ellipse cx="66" cy="118" rx="13" ry="4.5"/>
+          <path class="limb" d="M96 104 C118 104 134 116 138 140 C141 158 136 170 128 176" stroke-width="4.5"/>
+        </g>
+      </svg>
+      <div class="cine__title">
+        <h1 id="hero-title" class="cine__logo"><img src="assets/img/talinis-logo-dark.svg" width="1673" height="748" alt="Talinis Games – Valencia, Negros Oriental"></h1>
       </div>
     </div>
-  </main>
+    <nav class="cine__reel" aria-label="The three worlds">
+      <ol>
+        <li><a href="curia.html"><span class="cine__reel-no">I</span><span class="cine__reel-name">Curia Crescit</span></a></li>
+        <li><a href="saboteur.html"><span class="cine__reel-no">II</span><span class="cine__reel-name">Saboteur Aboard</span></a></li>
+        <li><a href="bisayafit.html"><span class="cine__reel-no">III</span><span class="cine__reel-name">BisayaFit</span></a></li>
+      </ol>
+    </nav>
+  </section>
+
+  
+  <section class="prologue" id="studio" aria-labelledby="studio-title">
+    <div class="prologue__inner">
+      <p class="prologue__kicker">Prologue</p>
+      <h2 id="studio-title" class="prologue__title">The studio</h2>
+      <p class="prologue__statement">Talinis Games is a small independent studio named after <em>Mount Talinis</em>, the twin peaks above Valencia in Negros Oriental.</p>
+      <p class="prologue__sub">We make games and apps we would want to play ourselves.</p>
+    </div>
+    <svg class="prologue__tarsier" viewBox="0 0 270 230" aria-hidden="true" focusable="false">
+      <defs>
+        <radialGradient id="t1-iris" cx="50%" cy="42%" r="58%"><stop offset="0" stop-color="#f6d08a"/><stop offset=".62" stop-color="#cf913c"/><stop offset="1" stop-color="#6c4318"/></radialGradient>
+        <radialGradient id="t1-fur" cx="50%" cy="30%" r="75%"><stop offset="0" stop-color="#4a5262"/><stop offset="1" stop-color="#262c38"/></radialGradient>
+        <linearGradient id="t1-leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a4038"/><stop offset="1" stop-color="#0a1c1c"/></linearGradient>
+      </defs>
+      <path d="M270 34 Q222 40 196 96 Q238 92 270 66Z" fill="#0c2422"/>
+      <path d="M270 96 Q240 150 212 222 Q252 196 270 150Z" fill="#0c2422"/>
+      <g transform="translate(14 4)">
+        <ellipse cx="62" cy="58" rx="15" ry="22" transform="rotate(-28 62 58)" fill="#2f3644"/>
+        <ellipse cx="62" cy="61" rx="8" ry="14" transform="rotate(-28 62 61)" fill="#1a1f2b"/>
+        <ellipse cx="138" cy="58" rx="15" ry="22" transform="rotate(28 138 58)" fill="#2f3644"/>
+        <ellipse cx="138" cy="61" rx="8" ry="14" transform="rotate(28 138 61)" fill="#1a1f2b"/>
+        <ellipse cx="100" cy="100" rx="47" ry="43" fill="url(#t1-fur)"/>
+        <circle cx="79" cy="94" r="21" fill="#141922"/><circle cx="121" cy="94" r="21" fill="#141922"/>
+        <circle cx="79" cy="94" r="18" fill="url(#t1-iris)"/><circle cx="121" cy="94" r="18" fill="url(#t1-iris)"/>
+        <circle cx="79" cy="95" r="10.5" fill="#06080c"/><circle cx="121" cy="95" r="10.5" fill="#06080c"/>
+        <circle cx="73.5" cy="88.5" r="3.4" fill="#f4f1ea"/><circle cx="115.5" cy="88.5" r="3.4" fill="#f4f1ea"/>
+        <circle cx="84" cy="100" r="1.4" fill="#f4f1ea" opacity=".6"/><circle cx="126" cy="100" r="1.4" fill="#f4f1ea" opacity=".6"/>
+        <path d="M96.5 114 L103.5 114 L100 118.5Z" fill="#12161e"/>
+      </g>
+      <path d="M270 148 Q214 118 130 124 Q62 130 8 182 Q80 206 160 194 Q226 184 270 198Z" fill="url(#t1-leaf)"/>
+      <path d="M270 148 Q214 118 130 124 Q62 130 8 182" fill="none" stroke="#3e7266" stroke-width="1.4" opacity=".7"/>
+      <path d="M10 181 Q120 150 270 172" fill="none" stroke="#2e5a50" stroke-width="2"/>
+      <g fill="none" stroke="#21493f" stroke-width="1.2"><path d="M70 166 Q84 150 96 136"/><path d="M130 160 Q146 146 160 128"/><path d="M190 162 Q206 150 222 136"/><path d="M80 172 Q110 184 132 196"/><path d="M150 166 Q180 178 200 190"/></g>
+      <g fill="#3d4555"><circle cx="84" cy="127" r="4.2"/><circle cx="93" cy="126" r="4.2"/><circle cx="102" cy="126.5" r="4.2"/><circle cx="127" cy="125" r="4.2"/><circle cx="136" cy="124.5" r="4.2"/><circle cx="145" cy="124.5" r="4.2"/></g>
+    </svg>
+  </section>
+
+  
+  <section class="worlds" id="worlds" aria-labelledby="worlds-title">
+    <div class="wrap worlds__head">
+      <p class="eyebrow">Three worlds</p>
+      <h2 id="worlds-title" class="display">Every game and app gets a world of its&nbsp;own.</h2>
+      <p class="worlds__intro">Three doors lead out of the rainforest: into the Elbe valley of the sixteenth century, into the year 1937, and down to the sea off&nbsp;Negros.</p>
+    </div>
+
+    <ol class="portals">
+      <li class="portal portal--curia">
+        <article aria-labelledby="portal-curia">
+          <picture class="portal__art">
+            <source media="(max-width: 700px)" srcset="assets/render/elbe-sandstone-mobile.webp" width="900" height="1400">
+            <img src="assets/render/elbe-sandstone-1200.webp" srcset="assets/render/elbe-sandstone-1200.webp 1200w, assets/render/elbe-sandstone-2400.webp 2400w" sizes="(min-width: 1440px) 1376px, 100vw" width="2400" height="1200" loading="lazy" alt="Sandstone towers of stacked blocks in Saxon Switzerland above a misty forested valley at dusk, a table mountain on the horizon">
+          </picture>
+          <div class="portal__body">
+            <p class="portal__no"><span>World</span> I</p>
+            <p class="portal__kind">City-building simulation · 1525–1585</p>
+            <h3 id="portal-curia" class="portal__title">Curia Crescit</h3>
+            <p class="portal__text">Found a farmstead in the Amt Pirna on the Elbe in 1525 and guide it through sixty years — from a single household to a small&nbsp;town.</p>
+            <p class="portal__status">In development</p>
+            <a class="portal__go" href="curia.html"><span>Enter the world of Curia Crescit</span><svg viewBox="0 0 28 12" aria-hidden="true" focusable="false"><path d="M0 6h26M21 1l5 5-5 5"/></svg></a>
+          </div>
+          <figure class="portal__plate">
+            <img src="assets/img/season-autumn-640.webp" srcset="assets/img/season-autumn-640.webp 640w, assets/img/season-autumn.webp 1280w" sizes="(max-width: 700px) 90vw, 360px" width="1280" height="720" loading="lazy" alt="Illustration of an autumn harvest: villagers with baskets on a lane between half-timbered houses, sandstone cliffs behind.">
+            <figcaption>AI-generated illustration</figcaption>
+          </figure>
+        </article>
+      </li>
+
+      <li class="portal portal--saboteur">
+        <article aria-labelledby="portal-saboteur">
+          <picture class="portal__art">
+            <source media="(max-width: 700px)" srcset="assets/render/airship-night-mobile.webp" width="900" height="1400">
+            <img src="assets/render/airship-night-1200.webp" srcset="assets/render/airship-night-1200.webp 1200w, assets/render/airship-night-2400.webp 2400w" sizes="(min-width: 1440px) 1376px, 100vw" width="2400" height="1200" loading="lazy" alt="An airship without markings glides above a moonlit sea of clouds at night, its passenger windows faintly lit.">
+          </picture>
+          <span class="deco-frame" aria-hidden="true"></span>
+          <div class="portal__body">
+            <p class="portal__no"><span>World</span> II</p>
+            <p class="portal__kind">Detective game · 1937 · Browser</p>
+            <h3 id="portal-saboteur" class="portal__title">Saboteur Aboard</h3>
+            <p class="portal__text">Find the saboteur before it is too&nbsp;late.</p>
+            <p class="portal__status">In development</p>
+            <a class="portal__go" href="saboteur.html"><span>Enter the world of Saboteur Aboard</span><svg viewBox="0 0 28 12" aria-hidden="true" focusable="false"><path d="M0 6h26M21 1l5 5-5 5"/></svg></a>
+          </div>
+        </article>
+      </li>
+
+      <li class="portal portal--bisaya">
+        <article aria-labelledby="portal-bisaya">
+          <picture class="portal__art">
+            <source media="(max-width: 700px)" srcset="assets/render/tropical-coast-mobile.webp" width="900" height="1400">
+            <img src="assets/render/tropical-coast-1200.webp" srcset="assets/render/tropical-coast-1200.webp 1200w, assets/render/tropical-coast-2400.webp 2400w" sizes="(min-width: 1440px) 1376px, 100vw" width="2400" height="1200" loading="lazy" alt="A calm beach at dusk with outrigger boats on mirror-still water and coconut palms along the shore.">
+          </picture>
+          <div class="portal__body">
+            <p class="portal__no"><span>World</span> III</p>
+            <p class="portal__kind">Language app for Android</p>
+            <h3 id="portal-bisaya" class="portal__title">BisayaFit</h3>
+            <p class="portal__text">Learn everyday Cebuano (Bisaya) as it is spoken in Dumaguete and Negros&nbsp;Oriental.</p>
+            <p class="portal__status">Coming soon</p>
+            <a class="portal__go" href="bisayafit.html"><span>Enter the world of BisayaFit</span><svg viewBox="0 0 28 12" aria-hidden="true" focusable="false"><path d="M0 6h26M21 1l5 5-5 5"/></svg></a>
+          </div>
+          <ul class="phrases" aria-label="Sample phrases from lesson 1">
+            <li lang="ceb"><b>Maayong buntag</b> <span lang="en">good morning</span></li>
+            <li lang="ceb"><b>Salamat</b> <span lang="en">thank you</span></li>
+            <li lang="ceb"><b>Palihug</b> <span lang="en">please</span></li>
+          </ul>
+        </article>
+      </li>
+    </ol>
+  </section>
+
+  
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <svg class="contact__forest" viewBox="0 0 600 420" aria-hidden="true" focusable="false">
+      <g transform="translate(600 0) scale(-1 1)"><g class="fill"><path d="M-42 -47 L-30 -39 L-19 -30 L-7 -22 L4 -14 L16 -5 L27 4 L38 13 L49 22 L60 31 L71 40 L81 50 L91 60 L101 71 L111 81 L120 92 L128 104 L136 115 L144 127 L151 140 L158 152 L163 165 L168 179 L173 192 L176 206 L179 220 L180 234 L181 249 L181 263 L179 277 L177 291 L178 292 L180 277 L182 263 L183 249 L182 234 L181 220 L178 206 L175 192 L171 178 L166 165 L160 151 L154 138 L147 126 L140 113 L131 101 L123 90 L114 79 L105 68 L95 57 L85 47 L74 37 L64 27 L53 17 L42 8 L31 -1 L20 -10 L8 -19 L-3 -27 L-15 -36 L-26 -44 L-38 -53Z"/><path d="M-17 -33Q12 -44 35 -1Q16 -51 -17 -33Z"/><path d="M-17 -33Q-25 0 -21 28Q-17 1 -17 -33Z"/><path d="M-5 -25Q27 -36 52 12Q31 -43 -5 -25Z"/><path d="M-5 -25Q-14 12 -9 43Q-6 13 -5 -25Z"/><path d="M6 -16Q41 -28 68 24Q46 -35 6 -16Z"/><path d="M6 -16Q-3 24 2 57Q5 24 6 -16Z"/><path d="M18 -7Q56 -20 83 36Q60 -26 18 -7Z"/><path d="M18 -7Q9 35 13 71Q16 36 18 -7Z"/><path d="M29 1Q69 -11 97 48Q74 -17 29 1Z"/><path d="M29 1Q19 46 24 84Q27 47 29 1Z"/><path d="M40 10Q83 -1 110 60Q87 -7 40 10Z"/><path d="M40 10Q30 57 34 96Q38 57 40 10Z"/><path d="M51 20Q95 9 122 71Q100 3 51 20Z"/><path d="M51 20Q41 67 45 107Q48 68 51 20Z"/><path d="M62 29Q107 20 133 83Q112 14 62 29Z"/><path d="M62 29Q51 77 55 117Q58 77 62 29Z"/><path d="M73 39Q118 31 143 94Q123 25 73 39Z"/><path d="M73 39Q61 87 65 127Q68 87 73 39Z"/><path d="M83 48Q129 43 151 104Q133 37 83 49Z"/><path d="M83 48Q70 96 75 137Q78 97 83 49Z"/><path d="M93 59Q138 55 159 115Q143 49 93 59Z"/><path d="M93 59Q80 105 84 145Q87 106 93 59Z"/><path d="M103 69Q147 67 166 125Q152 62 103 69Z"/><path d="M103 69Q89 114 93 153Q96 115 103 69Z"/><path d="M112 80Q155 80 172 136Q159 75 112 80Z"/><path d="M112 80Q98 123 102 161Q104 124 112 80Z"/><path d="M121 91Q162 94 177 145Q166 89 121 91Z"/><path d="M121 91Q106 132 110 168Q113 133 121 91Z"/><path d="M130 103Q168 107 181 155Q172 102 130 103Z"/><path d="M130 103Q114 140 118 175Q121 141 130 103Z"/><path d="M138 114Q173 121 184 164Q178 116 138 114Z"/><path d="M138 114Q122 149 126 181Q129 150 138 114Z"/><path d="M146 126Q177 134 186 174Q182 130 146 127Z"/><path d="M146 126Q130 158 134 187Q136 159 146 127Z"/><path d="M153 139Q180 148 188 183Q185 144 153 139Z"/><path d="M153 139Q137 166 141 194Q143 168 153 139Z"/><path d="M159 152Q182 161 189 191Q187 158 159 152Z"/><path d="M159 152Q144 175 148 200Q150 177 159 152Z"/><path d="M165 165Q184 175 189 200Q189 171 165 165Z"/><path d="M165 165Q150 185 154 206Q156 186 165 165Z"/><path d="M170 178Q185 188 189 208Q190 185 170 179Z"/><path d="M170 178Q156 194 160 212Q162 196 170 179Z"/><path d="M174 192Q185 201 188 216Q190 198 174 192Z"/><path d="M174 192Q162 204 165 219Q168 206 174 192Z"/><path d="M177 206Q184 214 187 224Q189 211 177 206Z"/><path d="M177 206Q168 214 170 226Q173 216 177 206Z"/><path d="M180 220Q183 226 186 232Q188 223 180 220Z"/><path d="M180 220Q172 225 175 233Q178 227 180 220Z"/><path d="M-70 64 L-57 64 L-45 65 L-32 66 L-19 67 L-6 68 L7 69 L19 71 L32 72 L45 74 L57 76 L70 78 L82 81 L95 84 L107 88 L119 92 L131 96 L143 101 L155 106 L166 112 L177 118 L188 125 L198 133 L208 141 L218 149 L227 159 L235 168 L243 178 L250 189 L251 189 L244 178 L236 167 L228 158 L219 148 L210 139 L200 131 L189 123 L179 116 L168 110 L156 103 L145 98 L133 93 L121 88 L108 84 L96 80 L83 77 L71 74 L58 71 L46 69 L33 67 L20 65 L7 63 L-6 62 L-18 61 L-31 60 L-44 58 L-57 57 L-70 56Z"/><path d="M-44 62Q-30 42 6 75Q-28 34 -44 62Z"/><path d="M-44 62Q-36 89 -33 112Q-28 87 -44 62Z"/><path d="M-32 63Q-15 41 24 78Q-12 33 -31 63Z"/><path d="M-32 63Q-22 92 -19 119Q-14 91 -31 63Z"/><path d="M-19 64Q0 40 41 81Q2 32 -19 64Z"/><path d="M-19 64Q-8 96 -5 125Q-0 94 -19 64Z"/><path d="M-6 65Q15 39 58 84Q17 32 -6 65Z"/><path d="M-6 65Q6 99 9 130Q14 97 -6 65Z"/><path d="M7 66Q30 40 73 88Q32 33 7 66Z"/><path d="M7 66Q20 102 22 134Q27 100 7 66Z"/><path d="M20 68Q44 41 88 91Q46 34 20 68Z"/><path d="M20 68Q33 105 35 138Q40 103 20 68Z"/><path d="M32 69Q58 43 102 94Q61 36 32 70Z"/><path d="M32 69Q46 107 48 141Q53 106 32 70Z"/><path d="M45 71Q72 45 115 97Q75 38 45 72Z"/><path d="M45 71Q58 110 61 144Q65 108 45 72Z"/><path d="M58 74Q86 49 127 101Q88 42 58 74Z"/><path d="M58 74Q70 112 73 146Q77 110 58 74Z"/><path d="M70 76Q99 53 138 104Q101 46 70 76Z"/><path d="M70 76Q82 114 85 148Q89 113 70 76Z"/><path d="M83 79Q111 57 148 108Q114 51 83 79Z"/><path d="M83 79Q94 116 96 149Q100 115 83 79Z"/><path d="M95 82Q124 63 157 111Q127 56 95 82Z"/><path d="M95 82Q105 118 107 149Q112 117 95 82Z"/><path d="M108 86Q135 69 165 115Q138 63 108 86Z"/><path d="M108 86Q116 120 118 150Q122 119 108 86Z"/><path d="M120 90Q147 75 173 118Q150 69 120 90Z"/><path d="M120 90Q126 122 129 150Q133 121 120 90Z"/><path d="M132 94Q157 82 181 122Q160 77 132 94Z"/><path d="M132 94Q137 124 140 150Q143 124 132 94Z"/><path d="M144 99Q167 90 187 126Q171 84 144 99Z"/><path d="M144 99Q147 127 150 150Q154 126 144 99Z"/><path d="M155 105Q177 98 193 129Q180 93 156 105Z"/><path d="M155 105Q157 129 160 150Q164 129 156 105Z"/><path d="M167 111Q185 106 199 133Q189 101 167 111Z"/><path d="M167 111Q167 132 170 150Q174 132 167 111Z"/><path d="M178 117Q193 115 204 137Q197 110 178 117Z"/><path d="M178 117Q177 135 180 150Q183 135 178 117Z"/><path d="M189 124Q201 124 209 141Q205 119 189 124Z"/><path d="M189 124Q187 139 190 151Q193 139 189 124Z"/><path d="M199 132Q208 133 214 145Q212 128 199 132Z"/><path d="M199 132Q197 143 200 152Q203 143 199 132Z"/><path d="M209 140Q214 142 219 149Q218 137 209 140Z"/><path d="M209 140Q206 147 209 153Q212 147 209 140Z"/><path d="M218 149Q220 151 223 153Q224 147 219 149Z"/><path d="M218 149Q215 152 218 155Q221 153 219 149Z"/><path d="M56 -70 L58 -58 L59 -47 L60 -35 L62 -24 L63 -12 L64 -1 L64 11 L65 22 L66 34 L66 45 L66 56 L65 68 L65 79 L64 91 L63 102 L61 114 L59 125 L56 136 L53 147 L50 158 L46 169 L41 179 L36 190 L30 200 L24 209 L17 219 L18 219 L25 210 L31 200 L37 190 L43 180 L47 170 L52 159 L55 148 L59 137 L62 126 L64 114 L66 103 L68 91 L69 80 L70 68 L70 57 L71 45 L71 33 L70 22 L70 10 L69 -1 L69 -13 L68 -24 L67 -36 L66 -47 L65 -59 L64 -70Z"/><path d="M62 -47Q82 -35 88 -9Q89 -39 62 -47Z"/><path d="M62 -47Q38 -34 41 -6Q45 -31 62 -47Z"/><path d="M64 -36Q86 -22 92 8Q93 -26 64 -35Z"/><path d="M64 -36Q37 -21 40 10Q44 -17 64 -35Z"/><path d="M65 -24Q89 -9 95 23Q96 -13 65 -24Z"/><path d="M65 -24Q36 -8 39 26Q43 -4 65 -24Z"/><path d="M66 -13Q91 4 97 38Q98 0 66 -12Z"/><path d="M66 -13Q36 5 38 40Q43 8 66 -12Z"/><path d="M66 -1Q93 17 99 52Q100 13 67 -1Z"/><path d="M66 -1Q35 17 38 54Q42 21 67 -1Z"/><path d="M67 10Q94 30 99 66Q101 26 67 11Z"/><path d="M67 10Q35 29 38 67Q42 33 67 11Z"/><path d="M68 22Q95 43 100 79Q101 39 68 22Z"/><path d="M68 22Q35 41 38 79Q42 44 68 22Z"/><path d="M68 33Q95 55 99 91Q101 52 68 34Z"/><path d="M68 33Q36 52 38 91Q42 56 68 34Z"/><path d="M68 45Q94 67 98 102Q100 64 68 45Z"/><path d="M68 45Q36 63 38 101Q42 66 68 45Z"/><path d="M68 57Q92 79 96 112Q98 76 68 57Z"/><path d="M68 57Q36 74 38 111Q43 77 68 57Z"/><path d="M68 68Q90 91 93 122Q96 88 68 68Z"/><path d="M68 68Q37 84 39 120Q43 87 68 68Z"/><path d="M67 80Q87 102 90 131Q93 99 67 80Z"/><path d="M67 80Q37 94 39 129Q43 98 67 80Z"/><path d="M66 91Q83 113 86 140Q89 110 66 91Z"/><path d="M66 91Q38 104 39 137Q44 107 66 91Z"/><path d="M64 103Q79 123 82 147Q85 121 64 103Z"/><path d="M64 103Q38 114 40 144Q44 117 64 103Z"/><path d="M62 114Q75 133 77 155Q81 131 63 114Z"/><path d="M62 114Q39 123 40 151Q44 127 63 114Z"/><path d="M60 125Q70 143 72 161Q76 141 60 125Z"/><path d="M60 125Q39 133 40 157Q44 136 60 125Z"/><path d="M57 136Q64 152 67 167Q70 150 58 137Z"/><path d="M57 136Q39 142 40 163Q44 145 58 137Z"/><path d="M54 148Q59 161 61 173Q64 159 54 148Z"/><path d="M54 148Q38 151 40 169Q43 155 54 148Z"/><path d="M51 159Q53 169 55 178Q58 168 51 159Z"/><path d="M51 159Q38 161 39 175Q43 164 51 159Z"/><path d="M46 169Q47 177 49 183Q52 176 47 169Z"/><path d="M46 169Q37 170 38 180Q42 173 47 169Z"/><path d="M42 180Q40 184 43 187Q46 183 42 180Z"/><path d="M42 180Q35 179 37 186Q40 183 42 180Z"/><path d="M0 314 L80 309 L160 304 L240 298 L320 292 L400 286 L450 282 L450 288 L400 295 L320 305 L240 316 L160 328 L80 339 L0 350Z"/><path d="M380 291 L430 252 L434 255 L386 296Z"/><path d="M430 252Q450 240 453 212Q431 229 430 252Z"/><path d="M428 254Q453 262 479 245Q449 238 428 254Z"/><path d="M450 284Q469 299 497 292Q473 277 450 284Z"/><path d="M446 283Q466 281 479 260Q455 264 446 283Z"/><path d="M404 268Q407 250 392 234Q390 256 404 268Z"/><path d="M150 322Q139 339 147 362Q157 341 150 322Z"/><path d="M168 320Q165 342 183 361Q184 335 168 320Z"/><path transform="translate(110 -9)" d="M150 300C138 288 136 262 144 244C150 230 162 220 176 216C180 208 184 200 190 196C196 190 206 188 214 192C220 195 223 200 223 204C228 206 232 210 231 214C230 218 225 220 220 219C216 222 210 224 204 222C206 230 208 238 208 246C210 262 214 282 216 300L208 300C206 286 202 274 198 266C202 272 202 282 196 290C194 295 194 298 196 300L174 300C172 294 164 292 158 296C155 298 152 300 150 300Z"/></g><g class="vine"><path d="M200 -10C218 75 182 150 206 250"/><path d="M150 -10C135 51 165 102 145 170"/><path d="M470 -10C491 63 449 126 477 210"/><path transform="translate(110 -9)" d="M148 296C138 312 136 336 142 360C146 376 140 392 132 400" class="tail"/></g></g>
+    </svg>
+    <div class="wrap contact__inner">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title" class="display">Write to us.</h2>
+      <p class="contact__text">Questions about a game, the app or the studio: one address reaches us.</p>
+      <p class="contact__mail"><a href="mailto:info@talinisgames.com">info@talinisgames.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="studio-foot">
+  <p>© 2026 Talinis Games · <a href="privacy.html">Privacy</a> · <a href="mailto:info@talinisgames.com">info@talinisgames.com</a></p>
+</footer>
 </body>
 </html>
