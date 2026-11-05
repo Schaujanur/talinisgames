@@ -470,3 +470,21 @@ p, h1, h2, h3, dl, dd, figure { margin: 0; }
   .portal__art img, .portal__go svg { transition: none; }
   .portal article:hover .portal__art img { transform: none; }
 }
+
+
+.cine { container-type: size; --R: 2; --s: 1.7; --oy: 0.23; --fx: 0.502; --fy: 0.35; --fw: 0.19; }
+.cine .cine__pic img { object-position: 50% 50%; transform: scale(var(--s)); transform-origin: 50% calc(var(--oy) * 100%); }
+.cine .cine__title {
+  --imgw: max(100cqw, calc(var(--R) * 100cqh));
+  --imgh: calc(var(--imgw) / var(--R));
+  --py: calc((100cqh - var(--imgh)) / 2 + var(--fy) * var(--imgh));
+  --lw: calc(var(--fw) * var(--imgw) * var(--s));
+  display: block; margin: 0; right: auto; width: var(--lw);
+  left: calc(50cqw + (var(--fx) - 0.5) * var(--imgw) * var(--s) - var(--lw) / 2);
+  top: calc(var(--oy) * 100cqh + (var(--py) - var(--oy) * 100cqh) * var(--s) - var(--lw) * 0.2236);
+}
+.cine .cine__title .cine__logo img { width: 100%; max-width: none; position: static; left: auto; transform: none; margin: 0; }
+@media (max-width: 700px) {
+  .cine { --R: 0.642857; --s: 1.75; --oy: 0.5; --fx: 0.4925; --fy: 0.45; --fw: 0.33; }
+  .cine .cine__frond { bottom: 0; }
+}
